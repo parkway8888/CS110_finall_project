@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Atbash Cipher</title> 
+            <link type="text/css" rel="stylesheet" href="atbash.css"/>
+            <meta charset="utf-8">
+            <script src ="Atbash.js"></script>
+            <script src="AtbashDecode.js"></script>
+            <link rel="stylesheet" href="button.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <link type="text/css" rel="stylesheet" href="Ceasar.css"/>
+            <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+
+              
+            <link type="text/css" rel="stylesheet" />
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="button.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <script src="encode.js"></script>
+            <script src="decode.js"></script>
+            <link type="text/css" rel="stylesheet" href="Ceasar.css"/>
+            
+    </head>
+    <body>
+        <div id="navigator">
+            <header>
+                <h1>When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl</h1>
+                <h1>(When cryptography is outlawed, only outlaws will have privacy)</h1>
+                <h1>John Perry Barlow</h1>
+                </h1>
+            </header>
+                <nav>
+                    <ul class="navlist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genneral_information.html">General Information</a></li>        
+                        <li class="dropdown"><a href="#" class="dropdown-btn">Ciphers</a>
+                            
+                            <div class=dropdown-menu>
+                                <a href="Ceasar.html">Ceasar Cipher</a>
+                                <a href="atbash.html">Atbash Cipher</a>
+                                <a href="sub.html">Keyword Cipher</a>
+                                <a href="Substitution_cipher.html">Substitution Cipher</a>
+                                <a href="vigener.html">Vigener Cipher</a>
+                                <a href="pigpen.html">Pigpen Cipher</a>
+                        </li>
+                        <li><a href="about_us.html">About Us</a></li>
+                            </div>
+                        
+                    </ul>
+                </nav>
+        </div> 
+        <h2>Atbash Cipher</h2>
+        <section class="content">
+                <p>
+                    Atbash is a mono-alphabetic substitution cipher originally used to encode the Hebrew alphabet. It can be modified for use with any known alphabet. The name derives from the first, last, second, and second to last Hebrew letters (Aleph-Tav-Beth-Shin). The Atbash cipher for the modern Hebrew alphabet would be:
+                </p>
+                <p>It works by substituting the first letter of an alphabet for the last letter, the second letter for the second to last and so on, effectively reversing the alphabet. An Atbash cipher for the Latin alphabet would be as follows.</p>
+                <pre>
+                    Plaintext:    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                    Encrypted:    Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
+                 </pre>
+                <P>
+                    A few English words also 'Atbash' into other English words: "irk"="rip", "low"="old", "hob"="sly", "hold"="slow", "holy"="slob", "horn"="slim", "glow"="told", "grog"="tilt" and "zoo"="all". Some other English words 'Atbash' into their own reverses, e.g., "wizard" = "draziw." 
+                </p>
+        <br/>
+        <p id="text_text">Plaintext</p>
+        <input type="text" id="Atext"></input>
+        <br/>
+        <br/>
+        <p id="shift_text">Enter cipher key:</p>
+        <input type="text" id="Akey"></input>
+        <button onclick="atbashShift()">
+        Encrypt
+        </button>
+        <button onclick="atbashDecode()">
+        Decrypt
+        </button>
+        <br/>
+        <br/>
+        <p id="code_text">Ciphertext</p>
+        <input type="text" id="Acode"></input> 
+        <script src="button.js"></script>
+    </body>
+</html> 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>           
+            <link type="text/css" rel="stylesheet" href="genneral_information.css"/>
+            <meta charset="utf-8">
+            <title>General Information</title> 
+            <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+            <link type="text/css" rel="stylesheet" href="Ceasar.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            
+    </head>
+    <body>
+        <div id="navigator">
+            <header>
+                <h1>When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl</h1>
+                <h1>(When cryptography is outlawed, only outlaws will have privacy)</h1>
+                <h1>John Perry Barlow</h1>
+                </h1>
+            </header>
+                <nav>
+                    <ul class="navlist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genneral_information.html">General Information</a></li>        
+                        <li class="dropdown"><a href="#" class="dropdown-btn">Ciphers</a>
+                            <div class=dropdown-menu>
+                                <a href="Ceasar.html">Ceasar Cipher</a>
+                                <a href="atbash.html">Atbash Cipher</a>
+                                <a href="sub.html">Keyword Cipher</a>
+                                <a href="Substitution_cipher.html">Substitution Cipher</a>
+                                <a href="vigener.html">Vigener Cipher</a>
+                                <a href="pigpen.html">Pigpen Cipher</a>
+                        </li>
+                        <li><a href="about_us.html">About Us</a></li>
+                            </div>
+                    </ul>
+                </nav>
+        </div>  
+        <section class="content">
+            <h2>Classic Cryptography</h2>
+            <p>The earliest forms of secret writing required little more than writing implements since most people could not read. More literacy, or literate opponents, required actual cryptography. The main classical cipher types are transposition ciphers, which rearrange the order of letters in a message and substitution ciphers, which systematically replace letters or groups of letters with other letters or groups of letters. An early substitution cipher was the Caesar cipher, in which each letter in the plaintext was replaced by a letter some fixed number of positions further down the alphabet. Suetonius reports that Julius Caesar used it with a shift of three to communicate with his generals. </p>
+            <p>Essentially all ciphers remained vulnerable to cryptanalysis using the frequency analysis technique until the development of the polyalphabetic cipher, most clearly by Leon Battista Alberti around the year 1467. Alberti's innovation was to use different ciphers for various parts of a message. He also invented what was probably the first automatic cipher device, a wheel which implemented a partial realization of his invention. In the polyalphabetic Vigenère cipher, encryption uses a key word, which controls letter substitution depending on which letter of the key word is used. It was finally explicitly recognized in the 19th century that secrecy of a cipher's algorithm is not a sensible nor practical safeguard of message security; in fact, it was further realized that any adequate cryptographic scheme (including ciphers) should remain secure even if the adversary fully understands the cipher algorithm itself. Security of the key used should alone be sufficient for a good cipher to maintain confidentiality under an attack.</p>
+            <p>Different physical devices and aids have been used to assist with ciphers. One of the earliest may have been the scytale of ancient Greece, a rod supposedly used by the Spartans as an aid for a transposition cipher. Many mechanical encryption/decryption devices were invented early in the 20th century, and several patented, among them rotor machines—famously including the Enigma machine used by the German government and military from the late 1920s and during World War II. The ciphers implemented by better quality examples of these machine designs brought about a substantial increase in cryptanalytic difficulty after WWI.</p>
+            <h2>Computer Era</h2>
+            <p>Just as the development of digital computers and electronics helped in cryptanalysis, it made possible much more complex ciphers. Furthermore, computers allowed for the encryption of any kind of data representable in any binary format, unlike classical ciphers which only encrypted written language texts. . Computer use has thus supplanted linguistic cryptography, both for cipher design and cryptanalysis. Many computer ciphers can be characterized by their operation on binary bit sequences. However, computers have also assisted cryptanalysis, which has compensated to some extent for increased cipher complexity. </p>
+            <p>As well as being aware of cryptographic history, cryptographic algorithm and system designers must also sensibly consider probable future developments while working on their designs. For instance, continuous improvements in computer processing power have increased the scope of brute-force attacks, so when specifying key lengths, the required key lengths are similarly advancing. The potential effects of quantum computing are already being considered by some cryptographic system designers.</p>
+            <p>Essentially, prior to the early 20th century, cryptography was chiefly concerned with linguistic and lexicographic patterns. Since then the emphasis has shifted, and cryptography now makes extensive use of mathematics, including aspects of information theory, computational complexity, statistics, combinatorics, abstract algebra, number theory, and finite mathematics generally. Cryptography is also a branch of engineering, but an unusual one since it deals with active, intelligent, and malevolent opposition.</p>
+
+        </section>
+        
+        <section class="accord"> <! accardion table>
+        <h2>Several Methods of Ciphering</h2>
+            <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Ceasar Cipher
+                </a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse ">
+            <div class="panel-body">In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions.  </div>
+        </div>
+    </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Keyword Cipher
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">A keyword cipher is a form of monoalphabetic substitution. A keyword is used as the key, and it determines the letter matchings of the cipher alphabet to the plain alphabet. Repeats of letters in the word are removed, then the cipher alphabet is generated with the keyword matching to A,B,C etc. until the keyword is used up, whereupon the rest of the ciphertext letters are used in alphabetical order, excluding those already used in the key.  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Vigener Cipher</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">In a Caesar cipher, each letter of the alphabet is shifted along some number of places; for example, in a Caesar cipher of shift 3, A would become D, B would become E, Y would become B and so on. The Vigenère cipher consists of several Caesar ciphers in sequence with different shift values. </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Atbash Cipher</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">Atbash is a mono-alphabetic substitution cipher originally used to encode the Hebrew alphabet. It can be modified for use with any known alphabet. The name derives from the first, last, second, and second to last Hebrew letters (Aleph-Tav-Beth-Shin). The Atbash cipher for the modern Hebrew alphabet would be:
+
+It works by substituting the first letter of an alphabet for the last letter, the second letter for the second to last and so on, effectively reversing the alphabet. An Atbash cipher for the Latin alphabet would be as follows.</div>
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        Substitution Cipher</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">In cryptography, a substitution cipher is a method of encoding by which units of plaintext are replaced with ciphertext, according to a fixed system; the "units" may be single, pairs of letters, triplets of letters, mixtures of the above, and so forth. The receiver deciphers the text by performing the inverse substitution. There are a number of different types of substitution cipher. If the cipher operates on single letters, it is termed a simple substitution cipher; a cipher that operates on larger groups of letters is termed polygraphic. A monoalphabetic cipher uses fixed substitution over the entire message, whereas a polyalphabetic cipher uses a number of substitutions at different positions in the message, where a unit from the plaintext is mapped to one of several possibilities in the ciphertext and vice versa.</div>
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+        Pigpen Cipher</a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">The pigpen cipher is a geometric simple substitution cipher, which exchanges letters for symbols which are fragments of a grid. The example key shows one way the letters can be assigned to the grid. The exact origin of the cipher is unknown, but records of this system have been found which go back to at least the 18th century. Variations of this cipher were used by both the Rosicrucian brotherhood and the Freemasons, though the latter used it so often that the system is frequently called the Freemason's cipher. They began using it in the early 18th century to keep their records of history and rites private, and for correspondence between lodge leaders.</div>
+    </div>
+  </div>
+</div>
+        </section>
+
+    </body>
+</html> 

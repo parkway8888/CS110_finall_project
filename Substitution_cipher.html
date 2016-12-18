@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Substitution Cipher</title> 
+            <link type="text/css" rel="stylesheet" href="Substitution_cipher.css"/>
+            <meta charset="utf-8">
+            <script src="js.js"></script>
+            <link rel="stylesheet" href="button.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <link type="text/css" rel="stylesheet" href="Ceasar.css"/>
+            <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navigator">
+            <header>
+                <h1>When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl</h1>
+                <h1>(When cryptography is outlawed, only outlaws will have privacy)</h1>
+                <h1>John Perry Barlow</h1>
+                </h1>
+            </header>
+                <nav>
+                    <ul class="navlist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genneral_information.html">General Information</a></li>        
+                        <li class="dropdown"><a href="#" class="dropdown-btn">Ciphers</a>
+                            
+                            <div class=dropdown-menu>
+                                <a href="Ceasar.html">Ceasar Cipher</a>
+                                <a href="atbash.html">Atbash Cipher</a>
+                                <a href="sub.html">Keyword Cipher</a>
+                                <a href="Substitution_cipher.html">Substitution Cipher</a>
+                                <a href="vigener.html">Vigener Cipher</a>
+                                <a href="pigpen.html">Pigpen Cipher</a>
+                        </li>
+                        <li><a href="about_us.html">About Us</a></li>
+                            </div>
+                        
+                    </ul>
+                </nav>
+        </div>
+                    <h2>Substitution Cipher</h2>
+        <section class="content">
+                <p>
+                   In cryptography, a substitution cipher is a method of encoding by which units of plaintext are replaced with ciphertext, according to a fixed system; the "units" may be single, pairs of letters, triplets of letters, mixtures of the above, and so forth. The receiver deciphers the text by performing the inverse substitution.  There are a number of different types of substitution cipher. If the cipher operates on single letters, it is termed a simple substitution cipher; a cipher that operates on larger groups of letters is termed polygraphic. A monoalphabetic cipher uses fixed substitution over the entire message, whereas a polyalphabetic cipher uses a number of substitutions at different positions in the message, where a unit from the plaintext is mapped to one of several possibilities in the ciphertext and vice versa.    
+                </p>
+                <p>
+                    Substitution of single letters separately can be demonstrated by writing out the alphabet in some order to represent the substitution. This is termed a substitution alphabet. The cipher alphabet may be shifted or reversed or scrambled in a more complex fashion, in which case it is called a mixed alphabet or deranged alphabet. Traditionally, mixed alphabets may be created by first writing out a keyword, removing repeated letters in it, then writing all the remaining letters in the alphabet in the usual order. 
+                </p>
+            
+                
+                <pre>
+                    Plaintext:    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                    Encrypted:    K R Y P T O S A B C D E F G H I J L M N Q U V W X Z 
+                </pre>
+                <P>
+                    With KRYPTOS as the keyword, all As become Ks, all Bs become Rs and so on. Encrypting the message "knowledge is power" using the keyword "kryptos".
+                </p>
+        </section>
+        <br/>
+            <p id="stext_text">Plaintext</p> 
+            <input type="text" id="Stext"></input>
+            <p id="skey_text">Enter cipher key:</p>
+            <input type="text" id="Skey"></input>
+            <button onclick="substitute()">
+            Encrypt
+            </button>
+            <p id="scode_text">Ciphertext</p>
+            <input type="text" id="Scode"></input>
+
+
+            <script src="button.js"></script>
+    </body>
+</html> 

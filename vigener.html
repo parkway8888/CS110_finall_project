@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Vigener Cipher</title> 
+            <link type="text/css" rel="stylesheet" href="vigener.css"/>
+            <meta charset="utf-8">
+            <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+            
+    </head>
+    <body>
+        <div id="navigator">
+            <header>
+                <h1>When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl</h1>
+                <h1>(When cryptography is outlawed, only outlaws will have privacy)</h1>
+                <h1>John Perry Barlow</h1>
+                </h1>
+            </header>
+                <nav>
+                    <ul class="navlist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genneral_information.html">General Information</a></li>        
+                        <li class="dropdown"><a href="#" class="dropdown-btn">Ciphers</a>
+                            
+                            <div class=dropdown-menu>
+                                <a href="Ceasar.html">Ceasar Cipher</a>
+                                <a href="atbash.html">Atbash Cipher</a>
+                                <a href="sub.html">Keyword Cipher</a>
+                                <a href="Substitution_cipher.html">Substitution Cipher</a>
+                                <a href="vigener.html">Vigener Cipher</a>
+                                <a href="pigpen.html">Pigpen Cipher</a>
+                        </li>
+                        <li><a href="about_us.html">About Us</a></li>
+                            </div>
+                        
+                    </ul>
+                </nav>
+        </div>  
+        <h2>Vigener Cipher</h2>
+        <section class="content">
+                <p>
+                   The Vigenère cipher is a method of encrypting alphabetic text by using a series of different Caesar ciphers based on the letters of a keyword. It is a simple form of polyalphabetic substitution. The Vigenère cipher has been reinvented many times. The method was originally described by Giovan Battista Bellaso in his 1553 book La cifra del. Sig. Giovan Battista Bellaso. Though the cipher is easy to understand and implement, for three centuries it resisted all attempts to break it; this earned it the description le chiffre indéchiffrable. Many people have tried to implement encryption schemes that are essentially Vigenère ciphers.  Friedrich Kasiski was the first to publish a general method of deciphering a Vigenère cipher, in 1863.     
+                </p>
+                <p>
+                    In a Caesar cipher, each letter of the alphabet is shifted along some number of places; for example, in a Caesar cipher of shift 3, A would become D, B would become E, Y would become B and so on. The Vigenère cipher consists of several Caesar ciphers in sequence with different shift values. 
+                </p>
+                <p>
+                    For example, suppose that the plaintext to be encrypted is:
+                </p>
+                <pre>ATTACKATDAWN</pre>
+                <p>The person sending the message chooses a keyword and repeats it until it matches the length of the plaintext, for example, the keyword "LEMON":
+                </p>
+                <pre>LEMONLEMONLE</pre>
+        </section>
+    </body>
+</html> 
